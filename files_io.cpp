@@ -7,6 +7,7 @@ int main(){
   SndfileHandle infile("./a.wav",SFM_READ);
   
   // print file infomation
+  std::cout << infile.format() << std::endl;
   std::cout << infile.samplerate() << std::endl;
   std::cout << infile.channels() << std::endl;
 
